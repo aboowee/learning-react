@@ -6,7 +6,7 @@ const GroceryListItem = (props) => {
     fontWeight: isDone ? 'bold' : 'normal'
   };
   return (
-    <li style={style} onClick={() => setIsDone(!isDone)}>
+    <li style={style} onMouseEnter={() => setIsDone(!isDone)}>
       {props.food}
     </li>
   );
